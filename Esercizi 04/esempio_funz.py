@@ -47,23 +47,23 @@
 # saluta()
 # saluta()
 
-#####################################################
+# #####################################################
 
-def log_istanziazione(cls):
-    class NuovaClasse(cls):
-        def __init__(self, *args, **kwargs):
-            print(f"Creazione di un'istanza di {cls.__name__}")
-            super().__init__(*args, **kwargs)
-    return NuovaClasse
+# def log_istanziazione(cls):
+#     class NuovaClasse(cls):
+#         def __init__(self, *args, **kwargs):
+#             print(f"Creazione di un'istanza di {cls.__name__}")
+#             super().__init__(*args, **kwargs)
+#     return NuovaClasse
 
-@log_istanziazione
-class Prova:
-    def __init__(self, valore):
-        self.valore = valore
+# @log_istanziazione
+# class Prova:
+#     def __init__(self, valore):
+#         self.valore = valore
 
-# Creiamo un'istanza per vedere l'effetto
-print(Prova)
-p = Prova(10)
+# # Creiamo un'istanza per vedere l'effetto
+# print(Prova)
+# p = Prova(10)
 
 #####################################################
 
