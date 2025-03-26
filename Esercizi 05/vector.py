@@ -77,33 +77,34 @@ class Vector:
         self.__data[key] = value
 
 
-v1 = Vector([1, 2, 3, 4, 5])
-print(v1)
-v2 = Vector((1, 2, 3, 4, 5))
-print(v2)
-v3 = Vector({1, 2, 3, 4, 5})
-print(v3)
-v4 = Vector(1, 2, 3, 4, 5)
-print(v4)
+if __name__ == '__main__':
+    v1 = Vector([1, 2, 3, 4, 5])
+    print(v1)
+    v2 = Vector((1, 2, 3, 4, 5))
+    print(v2)
+    v3 = Vector({1, 2, 3, 4, 5})
+    print(v3)
+    v4 = Vector(1, 2, 3, 4, 5)
+    print(v4)
 
-print(v1[0])
-print(v1[0:3])
-v1[0] = 5
-v1[0:3] = [10, 11, 12]
+    print(v1[0])
+    print(v1[0:3])
+    v1[0] = 5
+    v1[0:3] = [10, 11, 12]
 
-for v in v1:
-    print(v)
+    for v in v1:
+        print(v)
 
-# v5 = v1 + v2
-# v1 = v1 + v2
-# v1 += v2
-# v1 = v1 + 4
-# v1 = 4 + v1
-# v1 += 4
+    # v5 = v1 + v2
+    # v1 = v1 + v2
+    # v1 += v2
+    # v1 = v1 + 4
+    # v1 = 4 + v1
+    # v1 += 4
 
-v5 = v1 - v2
-v1 -= v2
-print(v1 - 4)
-print(4 - v1)
-v1 -= 4
-pass
+    v5 = v1 - v2
+    v1 -= v2
+    print(v1 - 4)
+    print(4 - v1)
+    v1 -= 4
+    pass

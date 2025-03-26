@@ -66,6 +66,12 @@ class MyClass:
     def x(self):
         del self.__x
 
+l1 = [1, 2, 3]
+l2 = [1, 2]
+
+for a, b in zip(l1, l2, l1, l2):
+    print(a, b)
+
 obj = MyClass()
 
 # 1. Accesso normale alla property
