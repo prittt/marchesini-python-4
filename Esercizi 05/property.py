@@ -34,37 +34,37 @@ class Property:
 
 # class MyClass:
 #     def __init__(self):
-#         self._x = 0
+#         self.__x = 0
 
 #     def get_x(self):
-#         return self._x
+#         return self.__x
 
 #     def set_x(self, value):
 #         print("Setting x to", value)
-#         self._x = value
+#         self.__x = value
 
 #     def del_x(self):
 #         print("Deleting x")
-#         del self._x
+#         del self.__x
 
 #     x = Property(get_x, set_x, del_x)
 
 
 class MyClass:
     def __init__(self):
-        self._x = 0
+        self.__x = 0
 
     @Property
     def x(self):
-        return self._x
+        return self.__x
 
     @x.setter
     def x(self, value):
-        self._x = value
+        self.__x = value
 
     @x.deleter
     def x(self):
-        del self._x
+        del self.__x
 
 obj = MyClass()
 
